@@ -69,6 +69,14 @@ namespace HelpTeacherApp
         {
             AbrirForm1(new Tiempo());
         }
+
+        private void BtnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login log = new Login();
+            log.Show();
+            
+        }
     }
 
 

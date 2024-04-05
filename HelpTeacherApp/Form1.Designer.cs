@@ -32,9 +32,7 @@ namespace HelpTeacherApp
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.MenuVertical = new System.Windows.Forms.Panel();
             this.BarraTitulo = new System.Windows.Forms.Panel();
-            this.BtnSlide = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panelContenedor = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.BtnAlumnos = new System.Windows.Forms.Button();
@@ -60,13 +58,20 @@ namespace HelpTeacherApp
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
             this.BtnHistorial = new System.Windows.Forms.Button();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panelContenedor = new System.Windows.Forms.Panel();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
+            this.BtnSlide = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
+            this.BtnSlider = new System.Windows.Forms.PictureBox();
+            this.BtnCerrarSesion = new System.Windows.Forms.PictureBox();
+            this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.MenuVertical.SuspendLayout();
-            this.BarraTitulo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnSlide)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -85,9 +90,15 @@ namespace HelpTeacherApp
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.tableLayoutPanel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel4.SuspendLayout();
             this.tableLayoutPanel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnSlide)).BeginInit();
+            this.tableLayoutPanel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnSlider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnCerrarSesion)).BeginInit();
+            this.tableLayoutPanel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.SuspendLayout();
             // 
             // MenuVertical
@@ -103,46 +114,23 @@ namespace HelpTeacherApp
             // 
             // BarraTitulo
             // 
-            this.BarraTitulo.Controls.Add(this.panel3);
+            this.BarraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.BarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.BarraTitulo.Location = new System.Drawing.Point(250, 0);
             this.BarraTitulo.Name = "BarraTitulo";
-            this.BarraTitulo.Size = new System.Drawing.Size(550, 44);
+            this.BarraTitulo.Size = new System.Drawing.Size(550, 10);
             this.BarraTitulo.TabIndex = 1;
-            // 
-            // BtnSlide
-            // 
-            this.BtnSlide.BackColor = System.Drawing.Color.White;
-            this.BtnSlide.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnSlide.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BtnSlide.Image = ((System.Drawing.Image)(resources.GetObject("BtnSlide.Image")));
-            this.BtnSlide.Location = new System.Drawing.Point(3, 3);
-            this.BtnSlide.Name = "BtnSlide";
-            this.BtnSlide.Size = new System.Drawing.Size(49, 38);
-            this.BtnSlide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.BtnSlide.TabIndex = 0;
-            this.BtnSlide.TabStop = false;
-            this.BtnSlide.Click += new System.EventHandler(this.BtnSlide_Click);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 6);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(250, 86);
+            this.pictureBox1.Size = new System.Drawing.Size(250, 80);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // panelContenedor
-            // 
-            this.panelContenedor.BackColor = System.Drawing.Color.White;
-            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContenedor.Location = new System.Drawing.Point(250, 44);
-            this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(550, 406);
-            this.panelContenedor.TabIndex = 2;
             // 
             // panel1
             // 
@@ -192,6 +180,7 @@ namespace HelpTeacherApp
             this.BtnAlumnos.FlatAppearance.BorderSize = 0;
             this.BtnAlumnos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.BtnAlumnos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAlumnos.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAlumnos.ForeColor = System.Drawing.SystemColors.Control;
             this.BtnAlumnos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnAlumnos.Location = new System.Drawing.Point(125, 3);
@@ -242,6 +231,7 @@ namespace HelpTeacherApp
             this.BtnPaseLista.FlatAppearance.BorderSize = 0;
             this.BtnPaseLista.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.BtnPaseLista.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnPaseLista.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnPaseLista.ForeColor = System.Drawing.SystemColors.Control;
             this.BtnPaseLista.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnPaseLista.Location = new System.Drawing.Point(125, 3);
@@ -288,6 +278,7 @@ namespace HelpTeacherApp
             this.BtnTareas.FlatAppearance.BorderSize = 0;
             this.BtnTareas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.BtnTareas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnTareas.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnTareas.ForeColor = System.Drawing.SystemColors.Control;
             this.BtnTareas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnTareas.Location = new System.Drawing.Point(125, 3);
@@ -328,6 +319,7 @@ namespace HelpTeacherApp
             this.BtnEvidencias.FlatAppearance.BorderSize = 0;
             this.BtnEvidencias.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.BtnEvidencias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnEvidencias.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnEvidencias.ForeColor = System.Drawing.SystemColors.Control;
             this.BtnEvidencias.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnEvidencias.Location = new System.Drawing.Point(125, 3);
@@ -376,6 +368,7 @@ namespace HelpTeacherApp
             this.BtnTrabajos.FlatAppearance.BorderSize = 0;
             this.BtnTrabajos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.BtnTrabajos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnTrabajos.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnTrabajos.ForeColor = System.Drawing.SystemColors.Control;
             this.BtnTrabajos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnTrabajos.Location = new System.Drawing.Point(125, 3);
@@ -421,6 +414,7 @@ namespace HelpTeacherApp
             this.BtnPracticas.FlatAppearance.BorderSize = 0;
             this.BtnPracticas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.BtnPracticas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnPracticas.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnPracticas.ForeColor = System.Drawing.SystemColors.Control;
             this.BtnPracticas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnPracticas.Location = new System.Drawing.Point(125, 3);
@@ -466,6 +460,7 @@ namespace HelpTeacherApp
             this.BtnExamenes.FlatAppearance.BorderSize = 0;
             this.BtnExamenes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.BtnExamenes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnExamenes.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnExamenes.ForeColor = System.Drawing.SystemColors.Control;
             this.BtnExamenes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnExamenes.Location = new System.Drawing.Point(125, 3);
@@ -511,6 +506,7 @@ namespace HelpTeacherApp
             this.BtnHistorial.FlatAppearance.BorderSize = 0;
             this.BtnHistorial.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.BtnHistorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnHistorial.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnHistorial.ForeColor = System.Drawing.SystemColors.Control;
             this.BtnHistorial.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnHistorial.Location = new System.Drawing.Point(125, 3);
@@ -531,15 +527,6 @@ namespace HelpTeacherApp
             this.pictureBox9.TabIndex = 1;
             this.pictureBox9.TabStop = false;
             // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.tableLayoutPanel10);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(550, 44);
-            this.panel3.TabIndex = 1;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -551,20 +538,71 @@ namespace HelpTeacherApp
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(250, 440);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(550, 10);
+            this.panel2.TabIndex = 2;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.panel3.Location = new System.Drawing.Point(790, 10);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(10, 430);
+            this.panel3.TabIndex = 3;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.tableLayoutPanel11);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(250, 10);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(540, 54);
+            this.panel4.TabIndex = 4;
+            // 
+            // panelContenedor
+            // 
+            this.panelContenedor.BackColor = System.Drawing.Color.White;
+            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContenedor.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panelContenedor.Location = new System.Drawing.Point(250, 64);
+            this.panelContenedor.Name = "panelContenedor";
+            this.panelContenedor.Size = new System.Drawing.Size(540, 376);
+            this.panelContenedor.TabIndex = 6;
+            // 
             // tableLayoutPanel10
             // 
             this.tableLayoutPanel10.ColumnCount = 2;
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.18182F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 89.81818F));
             this.tableLayoutPanel10.Controls.Add(this.BtnSlide, 0, 0);
             this.tableLayoutPanel10.Controls.Add(this.label1, 1, 0);
             this.tableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel10.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(250, 64);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
             this.tableLayoutPanel10.RowCount = 1;
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(550, 44);
-            this.tableLayoutPanel10.TabIndex = 0;
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(540, 376);
+            this.tableLayoutPanel10.TabIndex = 5;
+            // 
+            // BtnSlide
+            // 
+            this.BtnSlide.BackColor = System.Drawing.Color.White;
+            this.BtnSlide.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnSlide.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BtnSlide.Image = ((System.Drawing.Image)(resources.GetObject("BtnSlide.Image")));
+            this.BtnSlide.Location = new System.Drawing.Point(3, 3);
+            this.BtnSlide.Name = "BtnSlide";
+            this.BtnSlide.Size = new System.Drawing.Size(48, 370);
+            this.BtnSlide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnSlide.TabIndex = 0;
+            this.BtnSlide.TabStop = false;
             // 
             // label1
             // 
@@ -573,13 +611,84 @@ namespace HelpTeacherApp
             this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(58, 0);
+            this.label1.Location = new System.Drawing.Point(57, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(489, 44);
+            this.label1.Size = new System.Drawing.Size(480, 376);
             this.label1.TabIndex = 1;
             this.label1.Text = "HELPTEACHER";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // tableLayoutPanel11
+            // 
+            this.tableLayoutPanel11.BackColor = System.Drawing.Color.LightCyan;
+            this.tableLayoutPanel11.ColumnCount = 3;
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 81.81818F));
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tableLayoutPanel11.Controls.Add(this.BtnSlider, 0, 0);
+            this.tableLayoutPanel11.Controls.Add(this.BtnCerrarSesion, 2, 0);
+            this.tableLayoutPanel11.Controls.Add(this.tableLayoutPanel12, 1, 0);
+            this.tableLayoutPanel11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel11.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel11.Name = "tableLayoutPanel11";
+            this.tableLayoutPanel11.RowCount = 1;
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel11.Size = new System.Drawing.Size(540, 54);
+            this.tableLayoutPanel11.TabIndex = 0;
+            // 
+            // BtnSlider
+            // 
+            this.BtnSlider.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnSlider.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BtnSlider.Image = ((System.Drawing.Image)(resources.GetObject("BtnSlider.Image")));
+            this.BtnSlider.Location = new System.Drawing.Point(3, 3);
+            this.BtnSlider.Name = "BtnSlider";
+            this.BtnSlider.Size = new System.Drawing.Size(43, 48);
+            this.BtnSlider.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnSlider.TabIndex = 0;
+            this.BtnSlider.TabStop = false;
+            this.BtnSlider.Click += new System.EventHandler(this.BtnSlide_Click);
+            // 
+            // BtnCerrarSesion
+            // 
+            this.BtnCerrarSesion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnCerrarSesion.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BtnCerrarSesion.Image = ((System.Drawing.Image)(resources.GetObject("BtnCerrarSesion.Image")));
+            this.BtnCerrarSesion.Location = new System.Drawing.Point(493, 3);
+            this.BtnCerrarSesion.Name = "BtnCerrarSesion";
+            this.BtnCerrarSesion.Size = new System.Drawing.Size(44, 48);
+            this.BtnCerrarSesion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnCerrarSesion.TabIndex = 1;
+            this.BtnCerrarSesion.TabStop = false;
+            this.BtnCerrarSesion.Click += new System.EventHandler(this.BtnCerrarSesion_Click);
+            // 
+            // tableLayoutPanel12
+            // 
+            this.tableLayoutPanel12.ColumnCount = 3;
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel12.Controls.Add(this.pictureBox11, 1, 0);
+            this.tableLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel12.Location = new System.Drawing.Point(52, 3);
+            this.tableLayoutPanel12.Name = "tableLayoutPanel12";
+            this.tableLayoutPanel12.RowCount = 1;
+            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel12.Size = new System.Drawing.Size(435, 48);
+            this.tableLayoutPanel12.TabIndex = 2;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
+            this.pictureBox11.Location = new System.Drawing.Point(147, 3);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(138, 42);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 3;
+            this.pictureBox11.TabStop = false;
+            this.pictureBox11.Click += new System.EventHandler(this.label1_Click);
             // 
             // Form1
             // 
@@ -587,6 +696,10 @@ namespace HelpTeacherApp
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panelContenedor);
+            this.Controls.Add(this.tableLayoutPanel10);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.BarraTitulo);
             this.Controls.Add(this.MenuVertical);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -594,8 +707,6 @@ namespace HelpTeacherApp
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.MenuVertical.ResumeLayout(false);
-            this.BarraTitulo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.BtnSlide)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -614,10 +725,16 @@ namespace HelpTeacherApp
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.tableLayoutPanel9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel4.ResumeLayout(false);
             this.tableLayoutPanel10.ResumeLayout(false);
             this.tableLayoutPanel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnSlide)).EndInit();
+            this.tableLayoutPanel11.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.BtnSlider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnCerrarSesion)).EndInit();
+            this.tableLayoutPanel12.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -627,8 +744,6 @@ namespace HelpTeacherApp
         private System.Windows.Forms.Panel MenuVertical;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel BarraTitulo;
-        private System.Windows.Forms.PictureBox BtnSlide;
-        private System.Windows.Forms.Panel panelContenedor;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
@@ -654,10 +769,19 @@ namespace HelpTeacherApp
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
         private System.Windows.Forms.Button BtnExamenes;
         private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel11;
+        private System.Windows.Forms.PictureBox BtnSlider;
+        private System.Windows.Forms.Panel panelContenedor;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
+        private System.Windows.Forms.PictureBox BtnSlide;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox BtnCerrarSesion;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel12;
+        private System.Windows.Forms.PictureBox pictureBox11;
     }
 }
 
