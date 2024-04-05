@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace HelpTeacherApp
 {
     public partial class Form1 : Form
     {
+        SqlConnection conexion = new SqlConnection(Properties.Settings.Default.HelpTeacherConnectionString);
         public Form1()
         {
             InitializeComponent();
