@@ -62,7 +62,7 @@ namespace HelpTeacherApp
 
         private void BtnPaseLista_Click(object sender, EventArgs e)
         {
-            AbrirForm1(new Tiempo());
+            AbrirForm1(new ControlPaseLista());
         }
 
         private void label1_Click(object sender, EventArgs e)

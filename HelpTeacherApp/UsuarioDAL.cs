@@ -31,16 +31,17 @@ namespace HelpTeacherApp
             return hayUsuarios;
         }
 
-        public static int CrearCuentas (string pUsuaurio, string pContrasenia)
+        public static int CrearCuentas(string pUsuaurio, string pContrasenia, string pRutaImagen)
         {
             int resultado = 0;
             SqlConnection Conn = new SqlConnection(Properties.Settings.Default.HelpTeacherConnectionString); //Variable de conectividad hacia la base de datos
             Conn.Open();
-            SqlCommand Comando = new SqlCommand(string.Format("Insert Into Usuarios (Nombre, Contraseña) values ('{0}', PwdEncrypt('{1}') )", pUsuaurio, pContrasenia), Conn);
+            SqlCommand Comando = new SqlCommand(string.Format("Insert Into Usuarios (Nombre, Contraseña, Imagen) values ('{0}', PwdEncrypt('{1}'), '{2}' )", pUsuaurio, pContrasenia, pRutaImagen), Conn);
             resultado = Comando.ExecuteNonQuery();
             Conn.Close();
             return resultado;
         }
+        
 
         public static int Autentificar(string pUsuaurio, string pContrasenia)
         {

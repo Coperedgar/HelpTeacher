@@ -16,5 +16,10 @@ namespace HelpTeacherApp
         {
             InitializeComponent();
         }
+
+        private void ControlPaseLista_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
