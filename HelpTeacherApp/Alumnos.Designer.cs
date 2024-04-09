@@ -56,19 +56,19 @@ namespace HelpTeacherApp
             this.label3 = new System.Windows.Forms.Label();
             this.DgvAlumnos = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.TxtNombre = new System.Windows.Forms.TextBox();
+            this.CmbGrado = new System.Windows.Forms.ComboBox();
+            this.CmbGrupo = new System.Windows.Forms.ComboBox();
             this.TxtGeneracion = new System.Windows.Forms.TextBox();
             this.BtnBuscar = new System.Windows.Forms.Button();
             this.BtnCancelarB = new System.Windows.Forms.Button();
-            this.CmbGrado = new System.Windows.Forms.ComboBox();
-            this.CmbGrupo = new System.Windows.Forms.ComboBox();
-            this.TxtNombre = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.TxtId = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
@@ -509,6 +509,96 @@ namespace HelpTeacherApp
             this.tableLayoutPanel6.TabIndex = 3;
             this.tableLayoutPanel6.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel6_Paint);
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label11.Location = new System.Drawing.Point(3, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(99, 23);
+            this.label11.TabIndex = 16;
+            this.label11.Text = "Nombre";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label11.Click += new System.EventHandler(this.label11_Click);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label14.Location = new System.Drawing.Point(246, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(75, 23);
+            this.label14.TabIndex = 15;
+            this.label14.Text = "Generación";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label14.Click += new System.EventHandler(this.label14_Click);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label13.Location = new System.Drawing.Point(177, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(63, 23);
+            this.label13.TabIndex = 14;
+            this.label13.Text = "Grupo";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label13.Click += new System.EventHandler(this.label13_Click);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label12.Location = new System.Drawing.Point(108, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(63, 23);
+            this.label12.TabIndex = 13;
+            this.label12.Text = "Grado";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label12.Click += new System.EventHandler(this.label12_Click);
+            // 
+            // TxtNombre
+            // 
+            this.TxtNombre.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TxtNombre.Location = new System.Drawing.Point(3, 26);
+            this.TxtNombre.Name = "TxtNombre";
+            this.TxtNombre.Size = new System.Drawing.Size(99, 20);
+            this.TxtNombre.TabIndex = 5;
+            this.TxtNombre.TextChanged += new System.EventHandler(this.TxtNombre_TextChanged_1);
+            // 
+            // CmbGrado
+            // 
+            this.CmbGrado.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CmbGrado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CmbGrado.FormattingEnabled = true;
+            this.CmbGrado.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3"});
+            this.CmbGrado.Location = new System.Drawing.Point(108, 26);
+            this.CmbGrado.Name = "CmbGrado";
+            this.CmbGrado.Size = new System.Drawing.Size(63, 21);
+            this.CmbGrado.TabIndex = 7;
+            this.CmbGrado.SelectedIndexChanged += new System.EventHandler(this.CmbGrado_SelectedIndexChanged);
+            // 
+            // CmbGrupo
+            // 
+            this.CmbGrupo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CmbGrupo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CmbGrupo.FormattingEnabled = true;
+            this.CmbGrupo.Items.AddRange(new object[] {
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"});
+            this.CmbGrupo.Location = new System.Drawing.Point(177, 26);
+            this.CmbGrupo.Name = "CmbGrupo";
+            this.CmbGrupo.Size = new System.Drawing.Size(63, 21);
+            this.CmbGrupo.TabIndex = 3;
+            this.CmbGrupo.SelectedIndexChanged += new System.EventHandler(this.CmbGrupo_SelectedIndexChanged);
+            // 
             // TxtGeneracion
             // 
             this.TxtGeneracion.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -545,48 +635,6 @@ namespace HelpTeacherApp
             this.BtnCancelarB.Text = "Cancelar";
             this.BtnCancelarB.UseVisualStyleBackColor = false;
             this.BtnCancelarB.Click += new System.EventHandler(this.BtnCancelarB_Click);
-            // 
-            // CmbGrado
-            // 
-            this.CmbGrado.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CmbGrado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CmbGrado.FormattingEnabled = true;
-            this.CmbGrado.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3"});
-            this.CmbGrado.Location = new System.Drawing.Point(108, 26);
-            this.CmbGrado.Name = "CmbGrado";
-            this.CmbGrado.Size = new System.Drawing.Size(63, 21);
-            this.CmbGrado.TabIndex = 7;
-            this.CmbGrado.SelectedIndexChanged += new System.EventHandler(this.CmbGrado_SelectedIndexChanged);
-            // 
-            // CmbGrupo
-            // 
-            this.CmbGrupo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CmbGrupo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CmbGrupo.FormattingEnabled = true;
-            this.CmbGrupo.Items.AddRange(new object[] {
-            "A",
-            "B",
-            "C",
-            "D",
-            "E",
-            "F"});
-            this.CmbGrupo.Location = new System.Drawing.Point(177, 26);
-            this.CmbGrupo.Name = "CmbGrupo";
-            this.CmbGrupo.Size = new System.Drawing.Size(63, 21);
-            this.CmbGrupo.TabIndex = 3;
-            this.CmbGrupo.SelectedIndexChanged += new System.EventHandler(this.CmbGrupo_SelectedIndexChanged);
-            // 
-            // TxtNombre
-            // 
-            this.TxtNombre.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TxtNombre.Location = new System.Drawing.Point(3, 26);
-            this.TxtNombre.Name = "TxtNombre";
-            this.TxtNombre.Size = new System.Drawing.Size(99, 20);
-            this.TxtNombre.TabIndex = 5;
-            this.TxtNombre.TextChanged += new System.EventHandler(this.TxtNombre_TextChanged_1);
             // 
             // tableLayoutPanel1
             // 
@@ -626,54 +674,6 @@ namespace HelpTeacherApp
             this.TxtId.TabIndex = 2;
             this.TxtId.Visible = false;
             this.TxtId.TextChanged += new System.EventHandler(this.TxtId_TextChanged);
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label12.Location = new System.Drawing.Point(108, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(63, 23);
-            this.label12.TabIndex = 13;
-            this.label12.Text = "Grado";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label12.Click += new System.EventHandler(this.label12_Click);
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label13.Location = new System.Drawing.Point(177, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(63, 23);
-            this.label13.TabIndex = 14;
-            this.label13.Text = "Grupo";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label13.Click += new System.EventHandler(this.label13_Click);
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label14.Location = new System.Drawing.Point(246, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(75, 23);
-            this.label14.TabIndex = 15;
-            this.label14.Text = "Generación";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label14.Click += new System.EventHandler(this.label14_Click);
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label11.Location = new System.Drawing.Point(3, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(99, 23);
-            this.label11.TabIndex = 16;
-            this.label11.Text = "Nombre";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // Alumnos
             // 

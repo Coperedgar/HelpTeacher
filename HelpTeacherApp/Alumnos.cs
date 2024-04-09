@@ -49,21 +49,6 @@ namespace HelpTeacherApp
             
         }
 
-        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TxtNombre_Enter(object sender, EventArgs e)
-        {
-
-        }
-
 
 
 
@@ -71,13 +56,25 @@ namespace HelpTeacherApp
         {
             try
             {
+                
+                if (string.IsNullOrWhiteSpace(TxtNombreR.Text) ||
+                    string.IsNullOrWhiteSpace(TxtApellidoPR.Text) ||
+                    string.IsNullOrWhiteSpace(TxtApellidoMR.Text) ||
+                    string.IsNullOrWhiteSpace(CmbGradoR.Text) ||
+                    string.IsNullOrWhiteSpace(CmbGrupoR.Text) ||
+                    string.IsNullOrWhiteSpace(TxtGeneracionR.Text))
+                {
+                    MessageBox.Show("Todos los campos son obligatorios.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    TxtNombreR.Focus();
+                    return; // Detener la ejecución del método si hay campos vacíos
+                    
+                }
                 // Verificar si ya existe un alumno con el mismo nombre y número de lista
                 if (ExisteAlumno())
                 {
                     MessageBox.Show("Ya existe un alumno con los mismos datos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return; // Salir del método sin registrar el alumno
                 }
-
                 conexion.Open();
                 SqlCommand comando = new SqlCommand("INSERT INTO Alumnos VALUES(@NumeroLista, @Nombre, @ApellidoPaterno, @ApellidoMaterno, @Grado, @Grupo, @Generacion)", conexion);
 
@@ -151,10 +148,7 @@ namespace HelpTeacherApp
             TxtApellidoPR.Clear();
             TxtApellidoMR.Clear();
             TxtId.Clear();
-            
 
-
-      
 
             //Numeric Up Down en 0
             NumLista.Value = 1;
@@ -200,10 +194,23 @@ namespace HelpTeacherApp
         {
             try
             {
+                // Verificar si hay algún campo vacío
+                if (string.IsNullOrWhiteSpace(TxtNombreR.Text) ||
+                    string.IsNullOrWhiteSpace(TxtApellidoPR.Text) ||
+                    string.IsNullOrWhiteSpace(TxtApellidoMR.Text) ||
+                    string.IsNullOrWhiteSpace(CmbGradoR.Text) ||
+                    string.IsNullOrWhiteSpace(CmbGrupoR.Text) ||
+                    string.IsNullOrWhiteSpace(TxtGeneracionR.Text))
+                {
+                    MessageBox.Show("Todos los campos son obligatorios.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return; // Detener la ejecución del método si hay campos vacíos
+                }
+
                 // Verificar si ya existe un alumno con los mismos datos excepto el ID del alumno que se está actualizando
                 if (ExisteAlumnoExceptoActual(Convert.ToInt32(TxtId.Text)))
                 {
                     MessageBox.Show("Ya existe un alumno con los mismos datos, por favor, introduzca datos diferentes.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    Limpiar();
                     return; // No continuar con la actualización si ya existe un alumno con los mismos datos
                 }
 
@@ -234,6 +241,7 @@ namespace HelpTeacherApp
                 Limpiar();
             }
         }
+
 
         private bool ExisteAlumnoExceptoActual(int idAlumnoActual)
         {

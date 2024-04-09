@@ -32,6 +32,7 @@ namespace HelpTeacherApp
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.TxtId = new System.Windows.Forms.TextBox();
+            this.TxtCheked = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
@@ -41,16 +42,38 @@ namespace HelpTeacherApp
             this.BtnActualizar = new System.Windows.Forms.Button();
             this.BtnRegistrar = new System.Windows.Forms.Button();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.TxtApellidoMR = new System.Windows.Forms.TextBox();
-            this.TxtApellidoPR = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.TxtGeneracionR = new System.Windows.Forms.TextBox();
+            this.TxtGrupo = new System.Windows.Forms.TextBox();
+            this.TxtGrado = new System.Windows.Forms.TextBox();
+            this.TxtLista = new System.Windows.Forms.TextBox();
             this.TxtNombreR = new System.Windows.Forms.TextBox();
+            this.DtpFecha = new System.Windows.Forms.DateTimePicker();
+            this.CheckAsistencia = new System.Windows.Forms.CheckBox();
+            this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
+            this.TxtMotivo = new System.Windows.Forms.TextBox();
+            this.LblMotivo = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
+            this.DgvPaseLista = new System.Windows.Forms.DataGridView();
+            this.label15 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.TxtNombreList = new System.Windows.Forms.TextBox();
+            this.cmbGradoList = new System.Windows.Forms.ComboBox();
+            this.CmbGrupoList = new System.Windows.Forms.ComboBox();
+            this.BtnBuscarPLista = new System.Windows.Forms.Button();
+            this.BtnCancelarPLista = new System.Windows.Forms.Button();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.DgvAlumnos = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.label11 = new System.Windows.Forms.Label();
@@ -61,41 +84,22 @@ namespace HelpTeacherApp
             this.CmbGrado = new System.Windows.Forms.ComboBox();
             this.CmbGrupo = new System.Windows.Forms.ComboBox();
             this.TxtGeneracion = new System.Windows.Forms.TextBox();
-            this.BtnBuscar = new System.Windows.Forms.Button();
+            this.BtnBuscarAlumno = new System.Windows.Forms.Button();
             this.BtnCancelarB = new System.Windows.Forms.Button();
-            this.DgvAlumnos = new System.Windows.Forms.DataGridView();
-            this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label15 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.TxtGeneracionR = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.DtpFechaLista = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
+            this.tableLayoutPanel11.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            this.tableLayoutPanel6.SuspendLayout();
-            this.tableLayoutPanel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DgvAlumnos)).BeginInit();
             this.tableLayoutPanel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvPaseLista)).BeginInit();
             this.tableLayoutPanel10.SuspendLayout();
+            this.tableLayoutPanel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvAlumnos)).BeginInit();
+            this.tableLayoutPanel8.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -106,6 +110,7 @@ namespace HelpTeacherApp
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.Controls.Add(this.label1, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.TxtId, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.TxtCheked, 2, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -133,6 +138,15 @@ namespace HelpTeacherApp
             this.TxtId.Size = new System.Drawing.Size(100, 20);
             this.TxtId.TabIndex = 2;
             this.TxtId.Visible = false;
+            // 
+            // TxtCheked
+            // 
+            this.TxtCheked.Location = new System.Drawing.Point(535, 3);
+            this.TxtCheked.Name = "TxtCheked";
+            this.TxtCheked.Size = new System.Drawing.Size(100, 20);
+            this.TxtCheked.TabIndex = 3;
+            this.TxtCheked.Text = "SI";
+            this.TxtCheked.Visible = false;
             // 
             // tableLayoutPanel2
             // 
@@ -212,6 +226,7 @@ namespace HelpTeacherApp
             this.BtnCancelar.TabIndex = 3;
             this.BtnCancelar.Text = "Cancelar";
             this.BtnCancelar.UseVisualStyleBackColor = false;
+            this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
             // 
             // BtnEliminar
             // 
@@ -225,6 +240,7 @@ namespace HelpTeacherApp
             this.BtnEliminar.TabIndex = 2;
             this.BtnEliminar.Text = "Eliminar";
             this.BtnEliminar.UseVisualStyleBackColor = false;
+            this.BtnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click);
             // 
             // BtnActualizar
             // 
@@ -238,6 +254,7 @@ namespace HelpTeacherApp
             this.BtnActualizar.TabIndex = 1;
             this.BtnActualizar.Text = "Actualizar";
             this.BtnActualizar.UseVisualStyleBackColor = false;
+            this.BtnActualizar.Click += new System.EventHandler(this.BtnActualizar_Click);
             // 
             // BtnRegistrar
             // 
@@ -251,6 +268,7 @@ namespace HelpTeacherApp
             this.BtnRegistrar.TabIndex = 0;
             this.BtnRegistrar.Text = "Registrar";
             this.BtnRegistrar.UseVisualStyleBackColor = false;
+            this.BtnRegistrar.Click += new System.EventHandler(this.BtnRegistrar_Click);
             // 
             // tableLayoutPanel7
             // 
@@ -264,13 +282,13 @@ namespace HelpTeacherApp
             this.tableLayoutPanel7.Controls.Add(this.label5, 0, 1);
             this.tableLayoutPanel7.Controls.Add(this.label4, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.TxtGeneracionR, 1, 5);
-            this.tableLayoutPanel7.Controls.Add(this.textBox3, 1, 4);
-            this.tableLayoutPanel7.Controls.Add(this.TxtApellidoMR, 1, 3);
-            this.tableLayoutPanel7.Controls.Add(this.TxtApellidoPR, 1, 2);
+            this.tableLayoutPanel7.Controls.Add(this.TxtGrupo, 1, 4);
+            this.tableLayoutPanel7.Controls.Add(this.TxtGrado, 1, 3);
+            this.tableLayoutPanel7.Controls.Add(this.TxtLista, 1, 2);
             this.tableLayoutPanel7.Controls.Add(this.TxtNombreR, 1, 1);
-            this.tableLayoutPanel7.Controls.Add(this.dateTimePicker1, 1, 0);
-            this.tableLayoutPanel7.Controls.Add(this.checkBox2, 0, 6);
-            this.tableLayoutPanel7.Controls.Add(this.textBox4, 1, 6);
+            this.tableLayoutPanel7.Controls.Add(this.DtpFecha, 1, 0);
+            this.tableLayoutPanel7.Controls.Add(this.CheckAsistencia, 0, 6);
+            this.tableLayoutPanel7.Controls.Add(this.tableLayoutPanel11, 1, 6);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 43);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
@@ -285,63 +303,17 @@ namespace HelpTeacherApp
             this.tableLayoutPanel7.Size = new System.Drawing.Size(304, 316);
             this.tableLayoutPanel7.TabIndex = 3;
             // 
-            // TxtApellidoMR
+            // label9
             // 
-            this.TxtApellidoMR.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TxtApellidoMR.Enabled = false;
-            this.TxtApellidoMR.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtApellidoMR.Location = new System.Drawing.Point(155, 138);
-            this.TxtApellidoMR.Name = "TxtApellidoMR";
-            this.TxtApellidoMR.Size = new System.Drawing.Size(146, 26);
-            this.TxtApellidoMR.TabIndex = 10;
-            this.TxtApellidoMR.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // TxtApellidoPR
-            // 
-            this.TxtApellidoPR.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TxtApellidoPR.Enabled = false;
-            this.TxtApellidoPR.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtApellidoPR.Location = new System.Drawing.Point(155, 93);
-            this.TxtApellidoPR.Name = "TxtApellidoPR";
-            this.TxtApellidoPR.Size = new System.Drawing.Size(146, 26);
-            this.TxtApellidoPR.TabIndex = 9;
-            this.TxtApellidoPR.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(3, 45);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(146, 45);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Nombre";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(3, 90);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(146, 45);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "#Lista";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label7.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(3, 135);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(146, 45);
-            this.label7.TabIndex = 3;
-            this.label7.Text = "Grado";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label9.AutoSize = true;
+            this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label9.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(3, 225);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(146, 45);
+            this.label9.TabIndex = 5;
+            this.label9.Text = "Generación";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label8
             // 
@@ -355,17 +327,97 @@ namespace HelpTeacherApp
             this.label8.Text = "Grupo";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label9
+            // label7
             // 
-            this.label9.AutoSize = true;
-            this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label9.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(3, 225);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(146, 45);
-            this.label9.TabIndex = 5;
-            this.label9.Text = "Generación";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label7.AutoSize = true;
+            this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label7.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(3, 135);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(146, 45);
+            this.label7.TabIndex = 3;
+            this.label7.Text = "Grado";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label6.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(3, 90);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(146, 45);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "#Lista";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label5.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(3, 45);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(146, 45);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Nombre";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(3, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(146, 45);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "Fecha";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // TxtGeneracionR
+            // 
+            this.TxtGeneracionR.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TxtGeneracionR.Enabled = false;
+            this.TxtGeneracionR.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtGeneracionR.Location = new System.Drawing.Point(155, 228);
+            this.TxtGeneracionR.Name = "TxtGeneracionR";
+            this.TxtGeneracionR.Size = new System.Drawing.Size(146, 26);
+            this.TxtGeneracionR.TabIndex = 15;
+            this.TxtGeneracionR.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // TxtGrupo
+            // 
+            this.TxtGrupo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TxtGrupo.Enabled = false;
+            this.TxtGrupo.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtGrupo.Location = new System.Drawing.Point(155, 183);
+            this.TxtGrupo.Name = "TxtGrupo";
+            this.TxtGrupo.Size = new System.Drawing.Size(146, 26);
+            this.TxtGrupo.TabIndex = 17;
+            this.TxtGrupo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // TxtGrado
+            // 
+            this.TxtGrado.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TxtGrado.Enabled = false;
+            this.TxtGrado.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtGrado.Location = new System.Drawing.Point(155, 138);
+            this.TxtGrado.Name = "TxtGrado";
+            this.TxtGrado.Size = new System.Drawing.Size(146, 26);
+            this.TxtGrado.TabIndex = 10;
+            this.TxtGrado.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // TxtLista
+            // 
+            this.TxtLista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TxtLista.Enabled = false;
+            this.TxtLista.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtLista.Location = new System.Drawing.Point(155, 93);
+            this.TxtLista.Name = "TxtLista";
+            this.TxtLista.Size = new System.Drawing.Size(146, 26);
+            this.TxtLista.TabIndex = 9;
+            this.TxtLista.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // TxtNombreR
             // 
@@ -377,6 +429,71 @@ namespace HelpTeacherApp
             this.TxtNombreR.Size = new System.Drawing.Size(146, 26);
             this.TxtNombreR.TabIndex = 8;
             this.TxtNombreR.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // DtpFecha
+            // 
+            this.DtpFecha.Enabled = false;
+            this.DtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DtpFecha.Location = new System.Drawing.Point(155, 3);
+            this.DtpFecha.Name = "DtpFecha";
+            this.DtpFecha.Size = new System.Drawing.Size(146, 20);
+            this.DtpFecha.TabIndex = 18;
+            // 
+            // CheckAsistencia
+            // 
+            this.CheckAsistencia.AutoSize = true;
+            this.CheckAsistencia.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.CheckAsistencia.Checked = true;
+            this.CheckAsistencia.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CheckAsistencia.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CheckAsistencia.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CheckAsistencia.Location = new System.Drawing.Point(3, 273);
+            this.CheckAsistencia.Name = "CheckAsistencia";
+            this.CheckAsistencia.Size = new System.Drawing.Size(146, 40);
+            this.CheckAsistencia.TabIndex = 20;
+            this.CheckAsistencia.Text = "Asistencia";
+            this.CheckAsistencia.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CheckAsistencia.UseVisualStyleBackColor = true;
+            this.CheckAsistencia.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            // 
+            // tableLayoutPanel11
+            // 
+            this.tableLayoutPanel11.ColumnCount = 1;
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel11.Controls.Add(this.TxtMotivo, 0, 1);
+            this.tableLayoutPanel11.Controls.Add(this.LblMotivo, 0, 0);
+            this.tableLayoutPanel11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel11.Location = new System.Drawing.Point(155, 273);
+            this.tableLayoutPanel11.Name = "tableLayoutPanel11";
+            this.tableLayoutPanel11.RowCount = 2;
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel11.Size = new System.Drawing.Size(146, 40);
+            this.tableLayoutPanel11.TabIndex = 21;
+            // 
+            // TxtMotivo
+            // 
+            this.TxtMotivo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TxtMotivo.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtMotivo.Location = new System.Drawing.Point(3, 15);
+            this.TxtMotivo.Name = "TxtMotivo";
+            this.TxtMotivo.Size = new System.Drawing.Size(140, 26);
+            this.TxtMotivo.TabIndex = 23;
+            this.TxtMotivo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TxtMotivo.Visible = false;
+            // 
+            // LblMotivo
+            // 
+            this.LblMotivo.AutoSize = true;
+            this.LblMotivo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblMotivo.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblMotivo.Location = new System.Drawing.Point(3, 0);
+            this.LblMotivo.Name = "LblMotivo";
+            this.LblMotivo.Size = new System.Drawing.Size(140, 12);
+            this.LblMotivo.TabIndex = 0;
+            this.LblMotivo.Text = "Motivo";
+            this.LblMotivo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LblMotivo.Visible = false;
             // 
             // tableLayoutPanel3
             // 
@@ -394,6 +511,187 @@ namespace HelpTeacherApp
             this.tableLayoutPanel3.Size = new System.Drawing.Size(469, 403);
             this.tableLayoutPanel3.TabIndex = 2;
             // 
+            // tableLayoutPanel9
+            // 
+            this.tableLayoutPanel9.ColumnCount = 1;
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel9.Controls.Add(this.DgvPaseLista, 0, 2);
+            this.tableLayoutPanel9.Controls.Add(this.label15, 0, 0);
+            this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel10, 0, 1);
+            this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(6, 206);
+            this.tableLayoutPanel9.Name = "tableLayoutPanel9";
+            this.tableLayoutPanel9.RowCount = 3;
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 27.17949F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 63.07692F));
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(457, 191);
+            this.tableLayoutPanel9.TabIndex = 2;
+            // 
+            // DgvPaseLista
+            // 
+            this.DgvPaseLista.AllowUserToAddRows = false;
+            this.DgvPaseLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvPaseLista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DgvPaseLista.Location = new System.Drawing.Point(3, 73);
+            this.DgvPaseLista.Name = "DgvPaseLista";
+            this.DgvPaseLista.Size = new System.Drawing.Size(451, 115);
+            this.DgvPaseLista.TabIndex = 4;
+            this.DgvPaseLista.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvPaseLista_CellClick);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label15.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(3, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(451, 19);
+            this.label15.TabIndex = 1;
+            this.label15.Text = "PASES DE LISTA";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tableLayoutPanel10
+            // 
+            this.tableLayoutPanel10.ColumnCount = 6;
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.6854F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.94515F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.94515F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.534F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.94515F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.94515F));
+            this.tableLayoutPanel10.Controls.Add(this.label16, 0, 0);
+            this.tableLayoutPanel10.Controls.Add(this.label17, 3, 0);
+            this.tableLayoutPanel10.Controls.Add(this.label18, 2, 0);
+            this.tableLayoutPanel10.Controls.Add(this.label19, 1, 0);
+            this.tableLayoutPanel10.Controls.Add(this.TxtNombreList, 0, 1);
+            this.tableLayoutPanel10.Controls.Add(this.cmbGradoList, 1, 1);
+            this.tableLayoutPanel10.Controls.Add(this.CmbGrupoList, 2, 1);
+            this.tableLayoutPanel10.Controls.Add(this.BtnBuscarPLista, 4, 1);
+            this.tableLayoutPanel10.Controls.Add(this.BtnCancelarPLista, 5, 1);
+            this.tableLayoutPanel10.Controls.Add(this.DtpFechaLista, 3, 1);
+            this.tableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(3, 22);
+            this.tableLayoutPanel10.Name = "tableLayoutPanel10";
+            this.tableLayoutPanel10.RowCount = 2;
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(451, 45);
+            this.tableLayoutPanel10.TabIndex = 3;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label16.Location = new System.Drawing.Point(3, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(96, 22);
+            this.label16.TabIndex = 16;
+            this.label16.Text = "Nombre";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label17.Location = new System.Drawing.Point(239, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(73, 22);
+            this.label17.TabIndex = 15;
+            this.label17.Text = "Fecha";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label18.Location = new System.Drawing.Point(172, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(61, 22);
+            this.label18.TabIndex = 14;
+            this.label18.Text = "Grupo";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label19.Location = new System.Drawing.Point(105, 0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(61, 22);
+            this.label19.TabIndex = 13;
+            this.label19.Text = "Grado";
+            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // TxtNombreList
+            // 
+            this.TxtNombreList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TxtNombreList.Location = new System.Drawing.Point(3, 25);
+            this.TxtNombreList.Name = "TxtNombreList";
+            this.TxtNombreList.Size = new System.Drawing.Size(96, 20);
+            this.TxtNombreList.TabIndex = 5;
+            // 
+            // cmbGradoList
+            // 
+            this.cmbGradoList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cmbGradoList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbGradoList.FormattingEnabled = true;
+            this.cmbGradoList.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3"});
+            this.cmbGradoList.Location = new System.Drawing.Point(105, 25);
+            this.cmbGradoList.Name = "cmbGradoList";
+            this.cmbGradoList.Size = new System.Drawing.Size(61, 21);
+            this.cmbGradoList.TabIndex = 7;
+            // 
+            // CmbGrupoList
+            // 
+            this.CmbGrupoList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CmbGrupoList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CmbGrupoList.FormattingEnabled = true;
+            this.CmbGrupoList.Items.AddRange(new object[] {
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"});
+            this.CmbGrupoList.Location = new System.Drawing.Point(172, 25);
+            this.CmbGrupoList.Name = "CmbGrupoList";
+            this.CmbGrupoList.Size = new System.Drawing.Size(61, 21);
+            this.CmbGrupoList.TabIndex = 3;
+            // 
+            // BtnBuscarPLista
+            // 
+            this.BtnBuscarPLista.BackColor = System.Drawing.Color.Blue;
+            this.BtnBuscarPLista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BtnBuscarPLista.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnBuscarPLista.ForeColor = System.Drawing.Color.White;
+            this.BtnBuscarPLista.Location = new System.Drawing.Point(318, 25);
+            this.BtnBuscarPLista.Name = "BtnBuscarPLista";
+            this.BtnBuscarPLista.Size = new System.Drawing.Size(61, 17);
+            this.BtnBuscarPLista.TabIndex = 10;
+            this.BtnBuscarPLista.Text = "Buscar";
+            this.BtnBuscarPLista.UseVisualStyleBackColor = false;
+            this.BtnBuscarPLista.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // BtnCancelarPLista
+            // 
+            this.BtnCancelarPLista.BackColor = System.Drawing.Color.Red;
+            this.BtnCancelarPLista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BtnCancelarPLista.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCancelarPLista.ForeColor = System.Drawing.Color.White;
+            this.BtnCancelarPLista.Location = new System.Drawing.Point(385, 25);
+            this.BtnCancelarPLista.Name = "BtnCancelarPLista";
+            this.BtnCancelarPLista.Size = new System.Drawing.Size(63, 17);
+            this.BtnCancelarPLista.TabIndex = 9;
+            this.BtnCancelarPLista.Text = "Cancelar";
+            this.BtnCancelarPLista.UseVisualStyleBackColor = false;
+            this.BtnCancelarPLista.Click += new System.EventHandler(this.BtnCancelarPLista_Click);
+            // 
             // tableLayoutPanel6
             // 
             this.tableLayoutPanel6.ColumnCount = 1;
@@ -410,6 +708,17 @@ namespace HelpTeacherApp
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 63.07692F));
             this.tableLayoutPanel6.Size = new System.Drawing.Size(457, 191);
             this.tableLayoutPanel6.TabIndex = 1;
+            // 
+            // DgvAlumnos
+            // 
+            this.DgvAlumnos.AllowUserToAddRows = false;
+            this.DgvAlumnos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvAlumnos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DgvAlumnos.Location = new System.Drawing.Point(3, 73);
+            this.DgvAlumnos.Name = "DgvAlumnos";
+            this.DgvAlumnos.Size = new System.Drawing.Size(451, 115);
+            this.DgvAlumnos.TabIndex = 4;
+            this.DgvAlumnos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvAlumnos_CellClick);
             // 
             // label3
             // 
@@ -442,7 +751,7 @@ namespace HelpTeacherApp
             this.tableLayoutPanel8.Controls.Add(this.CmbGrado, 1, 1);
             this.tableLayoutPanel8.Controls.Add(this.CmbGrupo, 2, 1);
             this.tableLayoutPanel8.Controls.Add(this.TxtGeneracion, 3, 1);
-            this.tableLayoutPanel8.Controls.Add(this.BtnBuscar, 4, 1);
+            this.tableLayoutPanel8.Controls.Add(this.BtnBuscarAlumno, 4, 1);
             this.tableLayoutPanel8.Controls.Add(this.BtnCancelarB, 5, 1);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel8.Location = new System.Drawing.Point(3, 22);
@@ -544,18 +853,19 @@ namespace HelpTeacherApp
             this.TxtGeneracion.Size = new System.Drawing.Size(73, 20);
             this.TxtGeneracion.TabIndex = 11;
             // 
-            // BtnBuscar
+            // BtnBuscarAlumno
             // 
-            this.BtnBuscar.BackColor = System.Drawing.Color.Blue;
-            this.BtnBuscar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BtnBuscar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnBuscar.ForeColor = System.Drawing.Color.White;
-            this.BtnBuscar.Location = new System.Drawing.Point(318, 25);
-            this.BtnBuscar.Name = "BtnBuscar";
-            this.BtnBuscar.Size = new System.Drawing.Size(61, 17);
-            this.BtnBuscar.TabIndex = 10;
-            this.BtnBuscar.Text = "Buscar";
-            this.BtnBuscar.UseVisualStyleBackColor = false;
+            this.BtnBuscarAlumno.BackColor = System.Drawing.Color.Blue;
+            this.BtnBuscarAlumno.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BtnBuscarAlumno.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnBuscarAlumno.ForeColor = System.Drawing.Color.White;
+            this.BtnBuscarAlumno.Location = new System.Drawing.Point(318, 25);
+            this.BtnBuscarAlumno.Name = "BtnBuscarAlumno";
+            this.BtnBuscarAlumno.Size = new System.Drawing.Size(61, 17);
+            this.BtnBuscarAlumno.TabIndex = 10;
+            this.BtnBuscarAlumno.Text = "Buscar";
+            this.BtnBuscarAlumno.UseVisualStyleBackColor = false;
+            this.BtnBuscarAlumno.Click += new System.EventHandler(this.BtnBuscarAlumno_Click);
             // 
             // BtnCancelarB
             // 
@@ -569,266 +879,15 @@ namespace HelpTeacherApp
             this.BtnCancelarB.TabIndex = 9;
             this.BtnCancelarB.Text = "Cancelar";
             this.BtnCancelarB.UseVisualStyleBackColor = false;
+            this.BtnCancelarB.Click += new System.EventHandler(this.BtnCancelarB_Click);
             // 
-            // DgvAlumnos
+            // DtpFechaLista
             // 
-            this.DgvAlumnos.AllowUserToAddRows = false;
-            this.DgvAlumnos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvAlumnos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DgvAlumnos.Location = new System.Drawing.Point(3, 73);
-            this.DgvAlumnos.Name = "DgvAlumnos";
-            this.DgvAlumnos.Size = new System.Drawing.Size(451, 115);
-            this.DgvAlumnos.TabIndex = 4;
-            // 
-            // tableLayoutPanel9
-            // 
-            this.tableLayoutPanel9.ColumnCount = 1;
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel9.Controls.Add(this.dataGridView1, 0, 2);
-            this.tableLayoutPanel9.Controls.Add(this.label15, 0, 0);
-            this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel10, 0, 1);
-            this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel9.Location = new System.Drawing.Point(6, 206);
-            this.tableLayoutPanel9.Name = "tableLayoutPanel9";
-            this.tableLayoutPanel9.RowCount = 3;
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 27.17949F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 63.07692F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(457, 191);
-            this.tableLayoutPanel9.TabIndex = 2;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 73);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(451, 115);
-            this.dataGridView1.TabIndex = 4;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label15.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(3, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(451, 19);
-            this.label15.TabIndex = 1;
-            this.label15.Text = "PASES DE LISTA";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // tableLayoutPanel10
-            // 
-            this.tableLayoutPanel10.ColumnCount = 6;
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.6854F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.94515F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.94515F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.534F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.94515F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.94515F));
-            this.tableLayoutPanel10.Controls.Add(this.label16, 0, 0);
-            this.tableLayoutPanel10.Controls.Add(this.label17, 3, 0);
-            this.tableLayoutPanel10.Controls.Add(this.label18, 2, 0);
-            this.tableLayoutPanel10.Controls.Add(this.label19, 1, 0);
-            this.tableLayoutPanel10.Controls.Add(this.textBox1, 0, 1);
-            this.tableLayoutPanel10.Controls.Add(this.comboBox1, 1, 1);
-            this.tableLayoutPanel10.Controls.Add(this.comboBox2, 2, 1);
-            this.tableLayoutPanel10.Controls.Add(this.textBox2, 3, 1);
-            this.tableLayoutPanel10.Controls.Add(this.button1, 4, 1);
-            this.tableLayoutPanel10.Controls.Add(this.button2, 5, 1);
-            this.tableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel10.Location = new System.Drawing.Point(3, 22);
-            this.tableLayoutPanel10.Name = "tableLayoutPanel10";
-            this.tableLayoutPanel10.RowCount = 2;
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(451, 45);
-            this.tableLayoutPanel10.TabIndex = 3;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label16.Location = new System.Drawing.Point(3, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(96, 22);
-            this.label16.TabIndex = 16;
-            this.label16.Text = "Nombre";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label17.Location = new System.Drawing.Point(239, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(73, 22);
-            this.label17.TabIndex = 15;
-            this.label17.Text = "Generación";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label18.Location = new System.Drawing.Point(172, 0);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(61, 22);
-            this.label18.TabIndex = 14;
-            this.label18.Text = "Grupo";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label19.Location = new System.Drawing.Point(105, 0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(61, 22);
-            this.label19.TabIndex = 13;
-            this.label19.Text = "Grado";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Location = new System.Drawing.Point(3, 25);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(96, 20);
-            this.textBox1.TabIndex = 5;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3"});
-            this.comboBox1.Location = new System.Drawing.Point(105, 25);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(61, 21);
-            this.comboBox1.TabIndex = 7;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "A",
-            "B",
-            "C",
-            "D",
-            "E",
-            "F"});
-            this.comboBox2.Location = new System.Drawing.Point(172, 25);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(61, 21);
-            this.comboBox2.TabIndex = 3;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox2.Location = new System.Drawing.Point(239, 25);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(73, 20);
-            this.textBox2.TabIndex = 11;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Blue;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(318, 25);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(61, 17);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Buscar";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Red;
-            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(385, 25);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(63, 17);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Cancelar";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // TxtGeneracionR
-            // 
-            this.TxtGeneracionR.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TxtGeneracionR.Enabled = false;
-            this.TxtGeneracionR.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtGeneracionR.Location = new System.Drawing.Point(155, 228);
-            this.TxtGeneracionR.Name = "TxtGeneracionR";
-            this.TxtGeneracionR.Size = new System.Drawing.Size(146, 26);
-            this.TxtGeneracionR.TabIndex = 15;
-            this.TxtGeneracionR.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(3, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(146, 45);
-            this.label4.TabIndex = 16;
-            this.label4.Text = "Fecha";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox3.Enabled = false;
-            this.textBox3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(155, 183);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(146, 26);
-            this.textBox3.TabIndex = 17;
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(155, 3);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(146, 20);
-            this.dateTimePicker1.TabIndex = 18;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBox2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.Location = new System.Drawing.Point(3, 273);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(146, 40);
-            this.checkBox2.TabIndex = 20;
-            this.checkBox2.Text = "Asistencia";
-            this.checkBox2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox4.Location = new System.Drawing.Point(155, 273);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(146, 40);
-            this.textBox4.TabIndex = 21;
+            this.DtpFechaLista.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DtpFechaLista.Location = new System.Drawing.Point(239, 25);
+            this.DtpFechaLista.Name = "DtpFechaLista";
+            this.DtpFechaLista.Size = new System.Drawing.Size(73, 20);
+            this.DtpFechaLista.TabIndex = 19;
             // 
             // ControlPaseLista
             // 
@@ -850,17 +909,19 @@ namespace HelpTeacherApp
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel7.PerformLayout();
+            this.tableLayoutPanel11.ResumeLayout(false);
+            this.tableLayoutPanel11.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel6.ResumeLayout(false);
-            this.tableLayoutPanel6.PerformLayout();
-            this.tableLayoutPanel8.ResumeLayout(false);
-            this.tableLayoutPanel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DgvAlumnos)).EndInit();
             this.tableLayoutPanel9.ResumeLayout(false);
             this.tableLayoutPanel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvPaseLista)).EndInit();
             this.tableLayoutPanel10.ResumeLayout(false);
             this.tableLayoutPanel10.PerformLayout();
+            this.tableLayoutPanel6.ResumeLayout(false);
+            this.tableLayoutPanel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvAlumnos)).EndInit();
+            this.tableLayoutPanel8.ResumeLayout(false);
+            this.tableLayoutPanel8.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -879,8 +940,8 @@ namespace HelpTeacherApp
         private System.Windows.Forms.Button BtnActualizar;
         private System.Windows.Forms.Button BtnRegistrar;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
-        private System.Windows.Forms.TextBox TxtApellidoMR;
-        private System.Windows.Forms.TextBox TxtApellidoPR;
+        private System.Windows.Forms.TextBox TxtGrado;
+        private System.Windows.Forms.TextBox TxtLista;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
@@ -899,28 +960,31 @@ namespace HelpTeacherApp
         private System.Windows.Forms.ComboBox CmbGrado;
         private System.Windows.Forms.ComboBox CmbGrupo;
         private System.Windows.Forms.TextBox TxtGeneracion;
-        private System.Windows.Forms.Button BtnBuscar;
+        private System.Windows.Forms.Button BtnBuscarAlumno;
         private System.Windows.Forms.Button BtnCancelarB;
         private System.Windows.Forms.DataGridView DgvAlumnos;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView DgvPaseLista;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox TxtNombreList;
+        private System.Windows.Forms.ComboBox cmbGradoList;
+        private System.Windows.Forms.ComboBox CmbGrupoList;
+        private System.Windows.Forms.Button BtnBuscarPLista;
+        private System.Windows.Forms.Button BtnCancelarPLista;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox TxtGeneracionR;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox TxtGrupo;
+        private System.Windows.Forms.DateTimePicker DtpFecha;
+        private System.Windows.Forms.CheckBox CheckAsistencia;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel11;
+        private System.Windows.Forms.TextBox TxtMotivo;
+        private System.Windows.Forms.Label LblMotivo;
+        private System.Windows.Forms.TextBox TxtCheked;
+        private System.Windows.Forms.DateTimePicker DtpFechaLista;
     }
 }
