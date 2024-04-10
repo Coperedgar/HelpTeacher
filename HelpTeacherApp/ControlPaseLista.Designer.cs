@@ -72,6 +72,7 @@ namespace HelpTeacherApp
             this.CmbGrupoList = new System.Windows.Forms.ComboBox();
             this.BtnBuscarPLista = new System.Windows.Forms.Button();
             this.BtnCancelarPLista = new System.Windows.Forms.Button();
+            this.DtpFechaLista = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.DgvAlumnos = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
@@ -86,7 +87,6 @@ namespace HelpTeacherApp
             this.TxtGeneracion = new System.Windows.Forms.TextBox();
             this.BtnBuscarAlumno = new System.Windows.Forms.Button();
             this.BtnCancelarB = new System.Windows.Forms.Button();
-            this.DtpFechaLista = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
@@ -313,7 +313,7 @@ namespace HelpTeacherApp
             this.label9.Size = new System.Drawing.Size(146, 45);
             this.label9.TabIndex = 5;
             this.label9.Text = "Generación";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label8
             // 
@@ -325,7 +325,7 @@ namespace HelpTeacherApp
             this.label8.Size = new System.Drawing.Size(146, 45);
             this.label8.TabIndex = 4;
             this.label8.Text = "Grupo";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label7
             // 
@@ -337,7 +337,7 @@ namespace HelpTeacherApp
             this.label7.Size = new System.Drawing.Size(146, 45);
             this.label7.TabIndex = 3;
             this.label7.Text = "Grado";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label6
             // 
@@ -349,7 +349,7 @@ namespace HelpTeacherApp
             this.label6.Size = new System.Drawing.Size(146, 45);
             this.label6.TabIndex = 2;
             this.label6.Text = "#Lista";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label5
             // 
@@ -361,7 +361,7 @@ namespace HelpTeacherApp
             this.label5.Size = new System.Drawing.Size(146, 45);
             this.label5.TabIndex = 1;
             this.label5.Text = "Nombre";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label4
             // 
@@ -373,7 +373,7 @@ namespace HelpTeacherApp
             this.label4.Size = new System.Drawing.Size(146, 45);
             this.label4.TabIndex = 16;
             this.label4.Text = "Fecha";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // TxtGeneracionR
             // 
@@ -692,6 +692,14 @@ namespace HelpTeacherApp
             this.BtnCancelarPLista.UseVisualStyleBackColor = false;
             this.BtnCancelarPLista.Click += new System.EventHandler(this.BtnCancelarPLista_Click);
             // 
+            // DtpFechaLista
+            // 
+            this.DtpFechaLista.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DtpFechaLista.Location = new System.Drawing.Point(239, 25);
+            this.DtpFechaLista.Name = "DtpFechaLista";
+            this.DtpFechaLista.Size = new System.Drawing.Size(73, 20);
+            this.DtpFechaLista.TabIndex = 19;
+            // 
             // tableLayoutPanel6
             // 
             this.tableLayoutPanel6.ColumnCount = 1;
@@ -880,14 +888,6 @@ namespace HelpTeacherApp
             this.BtnCancelarB.Text = "Cancelar";
             this.BtnCancelarB.UseVisualStyleBackColor = false;
             this.BtnCancelarB.Click += new System.EventHandler(this.BtnCancelarB_Click);
-            // 
-            // DtpFechaLista
-            // 
-            this.DtpFechaLista.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.DtpFechaLista.Location = new System.Drawing.Point(239, 25);
-            this.DtpFechaLista.Name = "DtpFechaLista";
-            this.DtpFechaLista.Size = new System.Drawing.Size(73, 20);
-            this.DtpFechaLista.TabIndex = 19;
             // 
             // ControlPaseLista
             // 
