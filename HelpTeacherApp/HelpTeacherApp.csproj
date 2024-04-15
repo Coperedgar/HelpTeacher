@@ -52,11 +52,41 @@
     <Compile Include="Alumnos.Designer.cs">
       <DependentUpon>Alumnos.cs</DependentUpon>
     </Compile>
+    <Compile Include="ControlEvidencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlEvidencias.Designer.cs">
+      <DependentUpon>ControlEvidencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlExamenes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlExamenes.Designer.cs">
+      <DependentUpon>ControlExamenes.cs</DependentUpon>
+    </Compile>
     <Compile Include="ControlPaseLista.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ControlPaseLista.Designer.cs">
       <DependentUpon>ControlPaseLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPracticas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlPracticas.Designer.cs">
+      <DependentUpon>ControlPracticas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTareas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlTareas.Designer.cs">
+      <DependentUpon>ControlTareas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTrabajos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlTrabajos.Designer.cs">
+      <DependentUpon>ControlTrabajos.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -68,6 +98,18 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>HelpTeacherDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\Inventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\Inventario.Designer.cs">
+      <DependentUpon>Inventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\InventarioAlumnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\InventarioAlumnos.Designer.cs">
+      <DependentUpon>InventarioAlumnos.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -87,11 +129,32 @@
     <EmbeddedResource Include="Alumnos.resx">
       <DependentUpon>Alumnos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ControlEvidencias.resx">
+      <DependentUpon>ControlEvidencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlExamenes.resx">
+      <DependentUpon>ControlExamenes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ControlPaseLista.resx">
       <DependentUpon>ControlPaseLista.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ControlPracticas.resx">
+      <DependentUpon>ControlPracticas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlTareas.resx">
+      <DependentUpon>ControlTareas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlTrabajos.resx">
+      <DependentUpon>ControlTrabajos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\Inventario.resx">
+      <DependentUpon>Inventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\InventarioAlumnos.resx">
+      <DependentUpon>InventarioAlumnos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -104,6 +167,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Tiempo.resx">
       <DependentUpon>Tiempo.cs</DependentUpon>
@@ -131,6 +195,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagenes.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

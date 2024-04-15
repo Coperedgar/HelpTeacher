@@ -52,7 +52,6 @@ namespace HelpTeacherApp
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label7 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
@@ -70,6 +69,7 @@ namespace HelpTeacherApp
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
             this.label6 = new System.Windows.Forms.Label();
             this.PnlLogin = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel5.SuspendLayout();
             this.PnlRegistro.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -361,15 +361,6 @@ namespace HelpTeacherApp
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(377, 13);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(12, 437);
-            this.panel2.TabIndex = 1;
-            // 
             // panel6
             // 
             this.panel6.Controls.Add(this.panel7);
@@ -586,6 +577,15 @@ namespace HelpTeacherApp
             this.PnlLogin.Size = new System.Drawing.Size(365, 424);
             this.PnlLogin.TabIndex = 5;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel2.Location = new System.Drawing.Point(377, 13);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(12, 437);
+            this.panel2.TabIndex = 1;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -650,7 +650,6 @@ namespace HelpTeacherApp
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel8;
@@ -668,5 +667,6 @@ namespace HelpTeacherApp
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel PnlLogin;
+        private System.Windows.Forms.Panel panel2;
     }
 }

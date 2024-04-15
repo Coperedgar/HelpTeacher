@@ -311,6 +311,246 @@ namespace HelpTeacherApp
             DtpFechaLista.Value = DateTime.Now;
             ConsultarLista();
         }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtId_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtCheked_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel7_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtGeneracionR_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtGrupo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtGrado_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtLista_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtNombreR_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DtpFecha_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel11_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void TxtMotivo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LblMotivo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel9_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void DgvPaseLista_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel10_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label18_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label19_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtNombreList_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbGradoList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CmbGrupoList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DtpFechaLista_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void DgvAlumnos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel8_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtNombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CmbGrado_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CmbGrupo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtGeneracion_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }

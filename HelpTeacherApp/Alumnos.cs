@@ -24,7 +24,7 @@ namespace HelpTeacherApp
         }
         private void ConsultarAlumnos()
         {
-            ConsultarDatos("SELECT Id, NumeroLista As [#Lista], Nombre, ApellidoPaterno As [Apellido Paterno], ApellidoMaterno As[Apellido Materno], Grado, Grupo, Generacion as Generación FROM Alumnos ", DgvAlumnos);
+            ConsultarDatos("SELECT IdAlumno, NumeroLista As [#Lista], Nombre, ApellidoPaterno As [Apellido Paterno], ApellidoMaterno As[Apellido Materno], Grado, Grupo, Generacion as Generación FROM Alumnos ", DgvAlumnos);
         }
         private void Alumnos_Load(object sender, EventArgs e)
         {
@@ -280,7 +280,7 @@ namespace HelpTeacherApp
             if (resultado == DialogResult.Yes)
             {
                 conexion.Open();
-                SqlCommand comando = new SqlCommand("DELETE FROM Alumnos WHERE Id=" + TxtId.Text + "", conexion);
+                SqlCommand comando = new SqlCommand("DELETE FROM Alumnos WHERE IdAlumno=" + TxtId.Text + "", conexion);
                 comando.ExecuteNonQuery(); //Ejecuta el comando en la base de datos
                 MessageBox.Show("Usuario eliminado con éxito!!!", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 conexion.Close();
@@ -402,7 +402,8 @@ namespace HelpTeacherApp
         private void button1_Click(object sender, EventArgs e)
         {
             
-            ConsultarDatos("SELECT Id, NumeroLista As [#Lista], Nombre, ApellidoPaterno As [Apellido Paterno], ApellidoMaterno As[Apellido Materno], Grado, Grupo, Generacion as Generación FROM Alumnos where Nombre like '%" + TxtNombre.Text + "%' and Grado like '%" + CmbGrado.Text + "%' and Grupo like '%"+ CmbGrupo.Text +"%' and Generacion like '%"+ TxtGeneracion.Text +"%'", DgvAlumnos);
+            ConsultarDatos("SELECT IdAlumno, NumeroLista As [#Lista], Nombre, ApellidoPaterno As [Apellido Paterno], ApellidoMaterno As[Apellido Materno], Grado, Grupo, Generacion as Generación FROM Alumnos where Nombre like '%" + TxtNombre.Text + "%' and Grado like '%" + CmbGrado.Text + "%' and Grupo like '%"+ CmbGrupo.Text +"%' and Generacion like '%"+ TxtGeneracion.Text +"%'", DgvAlumnos);
+
         }
 
         private void BtnCancelarB_Click(object sender, EventArgs e)

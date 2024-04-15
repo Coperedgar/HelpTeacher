@@ -77,6 +77,38 @@ namespace HelpTeacherApp
             log.Show();
             
         }
+
+        private void BtnEvidencias_Click(object sender, EventArgs e)
+        {
+            AbrirForm1(new ControlEvidencias());
+        }
+
+        private void BtnExamenes_Click(object sender, EventArgs e)
+        {
+            AbrirForm1(new ControlExamenes());
+        }
+
+        private void BtnTrabajos_Click(object sender, EventArgs e)
+        {
+            AbrirForm1(new ControlTrabajos());
+        }
+
+        private void BtnTareas_Click(object sender, EventArgs e)
+        {
+            AbrirForm1(new ControlTareas());
+        }
+
+        private void BtnPracticas_Click(object sender, EventArgs e)
+        {
+            AbrirForm1(new ControlPracticas());
+        }
+
+        private void BtnInventario_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Inventario.Inventario log = new Inventario.Inventario();
+            log.Show();
+        }
     }
 
 
