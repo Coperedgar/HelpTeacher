@@ -95,5 +95,35 @@ namespace HelpTeacherApp.Inventario
         {
             AbrirForm(new InventarioAlumnos());
         }
+
+        private void BtnPaseLista_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new InventarioPaseLista());
+        }
+
+        private void BtnTrabajos_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new InventarioTrabajos());
+        }
+
+        private void BtnTareas_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new InventarioTareas());
+        }
+
+        private void BtnPracticas_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new InventarioPracticas());
+        }
+
+        private void BtnExamenes_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new InventarioExamenes());
+        }
+
+        private void BtnEvidencias_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new InventarioEvidencias());
+        }
     }
 }

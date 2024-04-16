@@ -44,7 +44,6 @@ namespace HelpTeacherApp
             this.label8 = new System.Windows.Forms.Label();
             this.DtpFecha = new System.Windows.Forms.DateTimePicker();
             this.TxtNota = new System.Windows.Forms.TextBox();
-            this.PtbEvidencia = new System.Windows.Forms.PictureBox();
             this.BtnSubirImagen = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
@@ -64,16 +63,17 @@ namespace HelpTeacherApp
             this.BtnBuscar = new System.Windows.Forms.Button();
             this.BtnCancelarB = new System.Windows.Forms.Button();
             this.DtpFechaEvidencia = new System.Windows.Forms.DateTimePicker();
+            this.PtbEvidencia = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PtbEvidencia)).BeginInit();
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvEvidencias)).BeginInit();
             this.tableLayoutPanel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PtbEvidencia)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -283,17 +283,6 @@ namespace HelpTeacherApp
             this.TxtNota.Size = new System.Drawing.Size(143, 20);
             this.TxtNota.TabIndex = 21;
             this.TxtNota.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // PtbEvidencia
-            // 
-            this.PtbEvidencia.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PtbEvidencia.Image = global::HelpTeacherApp.Properties.Resources.imagenes;
-            this.PtbEvidencia.Location = new System.Drawing.Point(3, 3);
-            this.PtbEvidencia.Name = "PtbEvidencia";
-            this.PtbEvidencia.Size = new System.Drawing.Size(298, 136);
-            this.PtbEvidencia.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PtbEvidencia.TabIndex = 5;
-            this.PtbEvidencia.TabStop = false;
             // 
             // BtnSubirImagen
             // 
@@ -569,6 +558,17 @@ namespace HelpTeacherApp
             this.DtpFechaEvidencia.Size = new System.Drawing.Size(99, 20);
             this.DtpFechaEvidencia.TabIndex = 20;
             // 
+            // PtbEvidencia
+            // 
+            this.PtbEvidencia.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PtbEvidencia.Image = global::HelpTeacherApp.Properties.Resources.imagenes;
+            this.PtbEvidencia.Location = new System.Drawing.Point(3, 3);
+            this.PtbEvidencia.Name = "PtbEvidencia";
+            this.PtbEvidencia.Size = new System.Drawing.Size(298, 136);
+            this.PtbEvidencia.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PtbEvidencia.TabIndex = 5;
+            this.PtbEvidencia.TabStop = false;
+            // 
             // ControlEvidencias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -589,13 +589,13 @@ namespace HelpTeacherApp
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel8.ResumeLayout(false);
             this.tableLayoutPanel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PtbEvidencia)).EndInit();
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvEvidencias)).EndInit();
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PtbEvidencia)).EndInit();
             this.ResumeLayout(false);
 
         }

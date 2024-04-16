@@ -670,6 +670,7 @@ namespace HelpTeacherApp
             // 
             // TxtPracticaP
             // 
+            this.TxtPracticaP.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtPracticaP.Location = new System.Drawing.Point(273, 25);
             this.TxtPracticaP.Name = "TxtPracticaP";
             this.TxtPracticaP.Size = new System.Drawing.Size(72, 20);

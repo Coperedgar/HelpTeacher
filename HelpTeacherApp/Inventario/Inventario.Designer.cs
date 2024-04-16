@@ -32,11 +32,7 @@ namespace HelpTeacherApp.Inventario
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inventario));
             this.LblEvidenciasCount = new System.Windows.Forms.Label();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
-            this.BtnSlider = new System.Windows.Forms.PictureBox();
-            this.BtnCerrarSesion = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.BtnSlide = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.BtnExamenes = new System.Windows.Forms.Button();
             this.LblAlumnosCount = new System.Windows.Forms.Label();
@@ -66,12 +62,12 @@ namespace HelpTeacherApp.Inventario
             this.panel2 = new System.Windows.Forms.Panel();
             this.BarraTitulo = new System.Windows.Forms.Panel();
             this.MenuVertical = new System.Windows.Forms.Panel();
+            this.BtnSlide = new System.Windows.Forms.PictureBox();
+            this.BtnSlider = new System.Windows.Forms.PictureBox();
+            this.BtnCerrarSesion = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnSlider)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnCerrarSesion)).BeginInit();
             this.tableLayoutPanel12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnSlide)).BeginInit();
             this.tableLayoutPanel10.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
@@ -83,6 +79,10 @@ namespace HelpTeacherApp.Inventario
             this.tableLayoutPanel8.SuspendLayout();
             this.panel4.SuspendLayout();
             this.MenuVertical.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnSlide)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnSlider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnCerrarSesion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.SuspendLayout();
             // 
             // LblEvidenciasCount
@@ -116,32 +116,6 @@ namespace HelpTeacherApp.Inventario
             this.tableLayoutPanel11.Size = new System.Drawing.Size(540, 54);
             this.tableLayoutPanel11.TabIndex = 0;
             // 
-            // BtnSlider
-            // 
-            this.BtnSlider.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnSlider.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BtnSlider.Image = ((System.Drawing.Image)(resources.GetObject("BtnSlider.Image")));
-            this.BtnSlider.Location = new System.Drawing.Point(3, 3);
-            this.BtnSlider.Name = "BtnSlider";
-            this.BtnSlider.Size = new System.Drawing.Size(43, 48);
-            this.BtnSlider.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.BtnSlider.TabIndex = 0;
-            this.BtnSlider.TabStop = false;
-            this.BtnSlider.Click += new System.EventHandler(this.BtnSlider_Click);
-            // 
-            // BtnCerrarSesion
-            // 
-            this.BtnCerrarSesion.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnCerrarSesion.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BtnCerrarSesion.Image = ((System.Drawing.Image)(resources.GetObject("BtnCerrarSesion.Image")));
-            this.BtnCerrarSesion.Location = new System.Drawing.Point(493, 3);
-            this.BtnCerrarSesion.Name = "BtnCerrarSesion";
-            this.BtnCerrarSesion.Size = new System.Drawing.Size(44, 48);
-            this.BtnCerrarSesion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.BtnCerrarSesion.TabIndex = 1;
-            this.BtnCerrarSesion.TabStop = false;
-            this.BtnCerrarSesion.Click += new System.EventHandler(this.BtnCerrarSesion_Click_1);
-            // 
             // tableLayoutPanel12
             // 
             this.tableLayoutPanel12.ColumnCount = 3;
@@ -156,32 +130,6 @@ namespace HelpTeacherApp.Inventario
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel12.Size = new System.Drawing.Size(435, 48);
             this.tableLayoutPanel12.TabIndex = 2;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
-            this.pictureBox11.Location = new System.Drawing.Point(148, 3);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(139, 42);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox11.TabIndex = 3;
-            this.pictureBox11.TabStop = false;
-            this.pictureBox11.Click += new System.EventHandler(this.pictureBox11_Click);
-            // 
-            // BtnSlide
-            // 
-            this.BtnSlide.BackColor = System.Drawing.Color.White;
-            this.BtnSlide.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnSlide.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BtnSlide.Image = ((System.Drawing.Image)(resources.GetObject("BtnSlide.Image")));
-            this.BtnSlide.Location = new System.Drawing.Point(3, 3);
-            this.BtnSlide.Name = "BtnSlide";
-            this.BtnSlide.Size = new System.Drawing.Size(48, 370);
-            this.BtnSlide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.BtnSlide.TabIndex = 0;
-            this.BtnSlide.TabStop = false;
             // 
             // label1
             // 
@@ -215,6 +163,7 @@ namespace HelpTeacherApp.Inventario
             this.BtnExamenes.TabIndex = 0;
             this.BtnExamenes.Text = "Examenes";
             this.BtnExamenes.UseVisualStyleBackColor = false;
+            this.BtnExamenes.Click += new System.EventHandler(this.BtnExamenes_Click);
             // 
             // LblAlumnosCount
             // 
@@ -359,7 +308,7 @@ namespace HelpTeacherApp.Inventario
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 1;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.tableLayoutPanel7.Size = new System.Drawing.Size(244, 50);
             this.tableLayoutPanel7.TabIndex = 13;
             // 
@@ -381,6 +330,7 @@ namespace HelpTeacherApp.Inventario
             this.BtnPracticas.TabIndex = 0;
             this.BtnPracticas.Text = "Prácticas";
             this.BtnPracticas.UseVisualStyleBackColor = false;
+            this.BtnPracticas.Click += new System.EventHandler(this.BtnPracticas_Click);
             // 
             // tableLayoutPanel3
             // 
@@ -394,7 +344,7 @@ namespace HelpTeacherApp.Inventario
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(244, 50);
             this.tableLayoutPanel3.TabIndex = 9;
             // 
@@ -416,6 +366,7 @@ namespace HelpTeacherApp.Inventario
             this.BtnPaseLista.TabIndex = 0;
             this.BtnPaseLista.Text = "Pase Lista";
             this.BtnPaseLista.UseVisualStyleBackColor = false;
+            this.BtnPaseLista.Click += new System.EventHandler(this.BtnPaseLista_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -429,7 +380,7 @@ namespace HelpTeacherApp.Inventario
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(244, 50);
             this.tableLayoutPanel2.TabIndex = 7;
             // 
@@ -465,7 +416,7 @@ namespace HelpTeacherApp.Inventario
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.tableLayoutPanel5.Size = new System.Drawing.Size(244, 50);
             this.tableLayoutPanel5.TabIndex = 11;
             // 
@@ -487,6 +438,7 @@ namespace HelpTeacherApp.Inventario
             this.BtnTareas.TabIndex = 0;
             this.BtnTareas.Text = "Tareas";
             this.BtnTareas.UseVisualStyleBackColor = false;
+            this.BtnTareas.Click += new System.EventHandler(this.BtnTareas_Click);
             // 
             // tableLayoutPanel4
             // 
@@ -521,6 +473,7 @@ namespace HelpTeacherApp.Inventario
             this.BtnEvidencias.TabIndex = 0;
             this.BtnEvidencias.Text = "Evidencias";
             this.BtnEvidencias.UseVisualStyleBackColor = false;
+            this.BtnEvidencias.Click += new System.EventHandler(this.BtnEvidencias_Click);
             // 
             // tableLayoutPanel6
             // 
@@ -555,6 +508,7 @@ namespace HelpTeacherApp.Inventario
             this.BtnTrabajos.TabIndex = 0;
             this.BtnTrabajos.Text = "Trabajos";
             this.BtnTrabajos.UseVisualStyleBackColor = false;
+            this.BtnTrabajos.Click += new System.EventHandler(this.BtnTrabajos_Click);
             // 
             // tableLayoutPanel8
             // 
@@ -568,7 +522,7 @@ namespace HelpTeacherApp.Inventario
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 1;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.tableLayoutPanel8.Size = new System.Drawing.Size(244, 50);
             this.tableLayoutPanel8.TabIndex = 14;
             // 
@@ -619,6 +573,58 @@ namespace HelpTeacherApp.Inventario
             this.MenuVertical.Size = new System.Drawing.Size(250, 450);
             this.MenuVertical.TabIndex = 7;
             // 
+            // BtnSlide
+            // 
+            this.BtnSlide.BackColor = System.Drawing.Color.White;
+            this.BtnSlide.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnSlide.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BtnSlide.Image = ((System.Drawing.Image)(resources.GetObject("BtnSlide.Image")));
+            this.BtnSlide.Location = new System.Drawing.Point(3, 3);
+            this.BtnSlide.Name = "BtnSlide";
+            this.BtnSlide.Size = new System.Drawing.Size(48, 370);
+            this.BtnSlide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnSlide.TabIndex = 0;
+            this.BtnSlide.TabStop = false;
+            // 
+            // BtnSlider
+            // 
+            this.BtnSlider.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnSlider.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BtnSlider.Image = ((System.Drawing.Image)(resources.GetObject("BtnSlider.Image")));
+            this.BtnSlider.Location = new System.Drawing.Point(3, 3);
+            this.BtnSlider.Name = "BtnSlider";
+            this.BtnSlider.Size = new System.Drawing.Size(43, 48);
+            this.BtnSlider.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnSlider.TabIndex = 0;
+            this.BtnSlider.TabStop = false;
+            this.BtnSlider.Click += new System.EventHandler(this.BtnSlider_Click);
+            // 
+            // BtnCerrarSesion
+            // 
+            this.BtnCerrarSesion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnCerrarSesion.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BtnCerrarSesion.Image = ((System.Drawing.Image)(resources.GetObject("BtnCerrarSesion.Image")));
+            this.BtnCerrarSesion.Location = new System.Drawing.Point(493, 3);
+            this.BtnCerrarSesion.Name = "BtnCerrarSesion";
+            this.BtnCerrarSesion.Size = new System.Drawing.Size(44, 48);
+            this.BtnCerrarSesion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnCerrarSesion.TabIndex = 1;
+            this.BtnCerrarSesion.TabStop = false;
+            this.BtnCerrarSesion.Click += new System.EventHandler(this.BtnCerrarSesion_Click_1);
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
+            this.pictureBox11.Location = new System.Drawing.Point(148, 3);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(139, 42);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 3;
+            this.pictureBox11.TabStop = false;
+            this.pictureBox11.Click += new System.EventHandler(this.pictureBox11_Click);
+            // 
             // Inventario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -637,11 +643,7 @@ namespace HelpTeacherApp.Inventario
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Inventario_Load);
             this.tableLayoutPanel11.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.BtnSlider)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnCerrarSesion)).EndInit();
             this.tableLayoutPanel12.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnSlide)).EndInit();
             this.tableLayoutPanel10.ResumeLayout(false);
             this.tableLayoutPanel10.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -661,6 +663,10 @@ namespace HelpTeacherApp.Inventario
             this.tableLayoutPanel8.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.MenuVertical.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.BtnSlide)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnSlider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnCerrarSesion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -12,17 +12,12 @@ using SpreadsheetLight;
 
 namespace HelpTeacherApp.Inventario
 {
-    public partial class InventarioAlumnos : Form
+    public partial class InventarioPaseLista : Form
     {
         SqlConnection conexion = new SqlConnection(Properties.Settings.Default.HelpTeacherConnectionString);
-        public InventarioAlumnos()
+        public InventarioPaseLista()
         {
             InitializeComponent();
-        }
-
-        private void InventarioAlumnos_Load(object sender, EventArgs e)
-        {
-            ConsultarAlumnos();
         }
         private void ConsultarDatos(String sql, DataGridView DB)
         {
@@ -31,9 +26,13 @@ namespace HelpTeacherApp.Inventario
             cargador.Fill(datos, "f");
             DB.DataSource = datos.Tables["f"];
         }
-        private void ConsultarAlumnos()
+        private void ConsultarLista()
         {
-            ConsultarDatos("SELECT IdAlumno, NumeroLista As [#Lista], Nombre, ApellidoPaterno As [Apellido Paterno], ApellidoMaterno As[Apellido Materno], Grado, Grupo, Generacion as Generación FROM Alumnos ", DgvAlumnos);
+            ConsultarDatos("SELECT IdLista, Fecha, Nombre, NumeroLista As [#Lista], Grado, Grupo, Generacion as Generación, Asistencia, Motivo FROM PaseLista ", DgvPaseLista);
+        }
+        private void InventarioPaseLista_Load(object sender, EventArgs e)
+        {
+            ConsultarLista();
         }
 
         private void BtnExportar_Click(object sender, EventArgs e)
@@ -57,7 +56,7 @@ namespace HelpTeacherApp.Inventario
                     style.Font.FontSize = 12;
                     style.Font.Bold = true;
                     int IC = 1;
-                    foreach (DataGridViewColumn column in DgvAlumnos.Columns)
+                    foreach (DataGridViewColumn column in DgvPaseLista.Columns)
                     {
                         sl.SetCellValue(1, IC, column.HeaderText.ToString());
                         sl.SetCellStyle(1, IC, style);
@@ -65,7 +64,7 @@ namespace HelpTeacherApp.Inventario
                     }
 
                     int IR = 2;
-                    foreach (DataGridViewRow row in DgvAlumnos.Rows)
+                    foreach (DataGridViewRow row in DgvPaseLista.Rows)
                     {
                         sl.SetCellValue(IR, 1, row.Cells[0].Value.ToString());
                         sl.SetCellValue(IR, 2, row.Cells[1].Value.ToString());
@@ -75,6 +74,7 @@ namespace HelpTeacherApp.Inventario
                         sl.SetCellValue(IR, 6, row.Cells[5].Value.ToString());
                         sl.SetCellValue(IR, 7, row.Cells[6].Value.ToString());
                         sl.SetCellValue(IR, 8, row.Cells[7].Value.ToString());
+                        sl.SetCellValue(IR, 9, row.Cells[8].Value.ToString());
                         IR++;
                     }
 
@@ -90,19 +90,19 @@ namespace HelpTeacherApp.Inventario
             }
         }
 
-        private void BtnBuscar_Click(object sender, EventArgs e)
+        private void BtnBuscarPLista_Click(object sender, EventArgs e)
         {
-            ConsultarDatos("SELECT IdAlumno, NumeroLista As [#Lista], Nombre, ApellidoPaterno As [Apellido Paterno], ApellidoMaterno As[Apellido Materno], Grado, Grupo, Generacion as Generación FROM Alumnos where Nombre like '%" + TxtNombre.Text + "%' and Grado like '%" + CmbGrado.Text + "%' and Grupo like '%" + CmbGrupo.Text + "%' and Generacion like '%" + TxtGeneracion.Text + "%'", DgvAlumnos);
+            ConsultarDatos("SELECT IdLista, Fecha, Nombre, NumeroLista As [#Lista], Grado, Grupo, Generacion as Generación, Asistencia, Motivo FROM PaseLista WHERE Nombre LIKE '%" + TxtNombreList.Text + "%' AND Grado LIKE '%" + cmbGradoList.Text + "%' AND Grupo LIKE '%" + CmbGrupoList.Text + "%' AND CONVERT(date, Fecha) = '" + DtpFechaLista.Value.ToString("yyyy-MM-dd") + "'", DgvPaseLista);
         }
 
-        private void BtnCancelarB_Click(object sender, EventArgs e)
+        private void BtnCancelarPLista_Click(object sender, EventArgs e)
         {
-            TxtNombre.Clear();
+            TxtNombreList.Clear();
             // Limpiar ComboBox
-            CmbGrado.SelectedIndex = -1;
-            CmbGrupo.SelectedIndex = -1;
-            TxtGeneracion.Clear();
-            ConsultarAlumnos();
+            cmbGradoList.SelectedIndex = -1;
+            CmbGrupoList.SelectedIndex = -1;
+            DtpFechaLista.Value = DateTime.Now;
+            ConsultarLista();
         }
     }
 }

@@ -33,8 +33,57 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.11.3.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>packages\DocumentFormat.OpenXml.2.11.3\lib\net46\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus, Version=7.1.1.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>packages\EPPlus.7.1.1\lib\net462\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus.Interfaces, Version=6.1.1.0, Culture=neutral, PublicKeyToken=a694d7f3b0907a61, processorArchitecture=MSIL">
+      <HintPath>packages\EPPlus.Interfaces.6.1.1\lib\net462\EPPlus.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus.System.Drawing, Version=6.1.1.0, Culture=neutral, PublicKeyToken=2308d35469c9bac0, processorArchitecture=MSIL">
+      <HintPath>packages\EPPlus.System.Drawing.6.1.1\lib\net462\EPPlus.System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IO.RecyclableMemoryStream, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.IO.RecyclableMemoryStream.3.0.0\lib\netstandard2.0\Microsoft.IO.RecyclableMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="SpreadsheetLight, Version=3.5.0.0, Culture=neutral, PublicKeyToken=32fbb46dc1730c57, processorArchitecture=MSIL">
+      <HintPath>packages\SpreadsheetLight.3.5.0\lib\netstandard2.0\SpreadsheetLight.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.ComponentModel.Annotations.5.0.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing.Common, Version=4.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Drawing.Common.5.0.0\lib\net461\System.Drawing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.IO.FileSystem.Primitives.4.3.0\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Packaging, Version=4.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.IO.Packaging.4.7.0\lib\net46\System.IO.Packaging.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,6 +93,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Alumnos.cs">
@@ -111,6 +161,42 @@
     <Compile Include="Inventario\InventarioAlumnos.Designer.cs">
       <DependentUpon>InventarioAlumnos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Inventario\InventarioEvidencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\InventarioEvidencias.Designer.cs">
+      <DependentUpon>InventarioEvidencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\InventarioExamenes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\InventarioExamenes.Designer.cs">
+      <DependentUpon>InventarioExamenes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\InventarioPaseLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\InventarioPaseLista.Designer.cs">
+      <DependentUpon>InventarioPaseLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\InventarioPracticas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\InventarioPracticas.Designer.cs">
+      <DependentUpon>InventarioPracticas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\InventarioTareas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\InventarioTareas.Designer.cs">
+      <DependentUpon>InventarioTareas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\InventarioTrabajos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\InventarioTrabajos.Designer.cs">
+      <DependentUpon>InventarioTrabajos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +242,24 @@
     <EmbeddedResource Include="Inventario\InventarioAlumnos.resx">
       <DependentUpon>InventarioAlumnos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\InventarioEvidencias.resx">
+      <DependentUpon>InventarioEvidencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\InventarioExamenes.resx">
+      <DependentUpon>InventarioExamenes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\InventarioPaseLista.resx">
+      <DependentUpon>InventarioPaseLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\InventarioPracticas.resx">
+      <DependentUpon>InventarioPracticas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\InventarioTareas.resx">
+      <DependentUpon>InventarioTareas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\InventarioTrabajos.resx">
+      <DependentUpon>InventarioTrabajos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -183,6 +287,7 @@
     <None Include="HelpTeacherDataSet.xss">
       <DependentUpon>HelpTeacherDataSet.xsd</DependentUpon>
     </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
